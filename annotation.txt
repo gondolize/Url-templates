@@ -1,0 +1,6 @@
+{{#production}}
+https://prod-core-api-fila.gondolize.com/inference?image_url={{imageUrl}}&overlap=0.2&confidence_base=0.3&confidence_eans=0.2&match=0.5&models=
+{{/production}}
+{{^production}}
+https://hml-core-api-fila.gondolize.com/inference?image_url={{imageUrl}}&overlap=0.2&confidence_base=0.3&confidence_eans=0.2&match=0.5&models=
+{{/production}}
