@@ -1,0 +1,6 @@
+{{#production}}
+https://prod-core-api-fila.gondolize.com/inference_b?image_url={{imageUrl}}&get_text=False
+{{/production}}
+{{^production}}
+https://hml-core-api-fila.gondolize.com/inference_b?image_url={{imageUrl}}&get_text=False
+{{/production}}
